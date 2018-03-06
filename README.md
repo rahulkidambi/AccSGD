@@ -35,12 +35,12 @@ If AccSGD is used in your paper/experiments, please cite the following papers.
   booktitle={International Conference on Learning Representations},
   year={2018}
 }
+
 @Article{Jain2017Accelerating,
-  title =	"Accelerating Stochastic Gradient Descent",
-  author =	"Prateek Jain and Sham M. Kakade and Rahul Kidambi
-		 and Praneeth Netrapalli and Aaron Sidford",
-  journal =	"CoRR",
-  year = 	"2017",
-  volume =	"abs/1704.08227"
+  title={Accelerating Stochastic Gradient Descent},
+  author={Jain, Prateek and Kakade, Sham and Kidambi, Rahul and Netrapalli, Praneeth and Sidford, Aaron},
+  journal={CoRR},
+  year={2017},
+  volume = {abs/1704.08227}
 }
 ```
