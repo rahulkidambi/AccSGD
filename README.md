@@ -1,7 +1,5 @@
 # AccSGD
-Implements pytorch code for the Accelerated SGD algorithm.
-
-This is the code associated with the paper ``On the insufficiency of existing momentum schemes for Stochastic Optimization'', appearing at ICLR 2018. 
+This is the code associated with Accelerated SGD algorithm used in the paper ``On the insufficiency of existing momentum schemes for Stochastic Optimization'', appearing at ICLR 2018. 
 
 ## Usage:
 
