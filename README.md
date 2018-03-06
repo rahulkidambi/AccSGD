@@ -26,8 +26,6 @@ As the networks grow deeper (specifically with Resnets and beyond), employing ka
 
 As the batch size increases by a factor of "k", increase xi by sqrt(k).
 
-Finally, 
-
 ## Citation:
 
 If AccSGD is used in your paper/experiments, please cite the following papers.
