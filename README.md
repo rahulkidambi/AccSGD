@@ -6,7 +6,7 @@ First, we require importing the optimizer through the following command:
 ```
 from AccSGD import *
 ```
-Next, an ASGD optimizer working with a given pytorch model can be invoked using the following command:
+Next, an ASGD optimizer working with a given pytorch `model` can be invoked using the following command:
 ```
 optimizer = AccSGD(model.parameters(), lr=0.1, kappa = 1000.0, xi = 10.0)
 ```
