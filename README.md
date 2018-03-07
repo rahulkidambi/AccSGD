@@ -12,7 +12,7 @@ optimizer = AccSGD(model.parameters(), lr=0.1, kappa = 1000.0, xi = 10.0)
 ```
 where, `lr` is the learning rate, `kappa` the long step parameter and `xi` is the statistical advantage parameter.
 ## Rough guidelines: 
-The learning rate is set similar to schemes such as Stochastic Gradient Descent/Standard Momentum (Heavy Ball)/Nesterov's Acceleration.
+The learning rate `lr` is set similar to schemes such as vanilla Stochastic Gradient Descent (SGD)/Standard Momentum (Heavy Ball)/Nesterov's Acceleration.
 
 As the networks grow deeper (e.g. with resnets) and when dealing with typically harder datasets such as CIFAR/ImageNet, employing `kappa` to be 10^4 or more helps. For shallow nets and easier datasets such as MNIST, a typical value of `kappa` can be set as 10^3 or even 10^2.
 
@@ -23,7 +23,7 @@ Effective ways to debug:
 For Nets with ReLU/ELU type activations:
 
 (--1--) Slower convergence: There are three reasons for this to happen:
-* This could be a result of setting the learning rate too low (which parallels SGD/vanilla momentum/Nesterov's acceleration). 
+* This could be a result of setting the learning rate too low (similar to SGD/vanilla momentum/Nesterov's acceleration). 
 * This could be as a result of setting `kappa` to be too high. 
 * The other reason could be that `xi` can be set to a very small value.
 
