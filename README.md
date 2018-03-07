@@ -14,7 +14,7 @@ where, `lr` is the learning rate, `kappa` the long step parameter and `xi` is th
 ## Rough guidelines: 
 The learning rate is typically set similar to how it is set for a scheme like Stochastic Gradient Descent.
 
-As the networks grow deeper (e.g. with resnets), employing `kappa` to be 10^4 or more helps. For shallow nets, a typical value of `kappa` can be set as 10^3.
+As the networks grow deeper (e.g. with resnets) and when dealing with typically harder datasets such as CIFAR/ImageNet, employing `kappa` to be $10^4$ or more helps. For shallow nets and easier datasets such as MNIST, a typical value of `kappa` can be set as $10^3$ or even $10^2$.
 
 As the batch size increases by a factor of `k`, increase `xi` by `sqrt(k)`. 
 
