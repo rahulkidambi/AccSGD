@@ -12,11 +12,11 @@ optimizer = AccSGD(model.parameters(), lr=0.1, kappa = 1000.0, xi = 10.0)
 ```
 where, `lr` is the learning rate, `kappa` the long step parameter and `xi` is the statistical advantage parameter.
 ## Rough guidelines: 
-(*)The learning rate `lr` (*): `lr` set similar to schemes such as vanilla Stochastic Gradient Descent (SGD)/Standard Momentum (Heavy Ball)/Nesterov's Acceleration.
+*The learning rate `lr`*: `lr` set similar to schemes such as vanilla Stochastic Gradient Descent (SGD)/Standard Momentum (Heavy Ball)/Nesterov's Acceleration.
 
-(*)Long Step `kappa` (*): As the networks grow deeper (e.g. with resnets) and when dealing with typically harder datasets such as CIFAR/ImageNet, employing `kappa` to be 10^4 or more helps. For shallow nets and easier datasets such as MNIST, a typical value of `kappa` can be set as 10^3 or even 10^2.
+*Long Step `kappa`*: As the networks grow deeper (e.g. with resnets) and when dealing with typically harder datasets such as CIFAR/ImageNet, employing `kappa` to be 10^4 or more helps. For shallow nets and easier datasets such as MNIST, a typical value of `kappa` can be set as 10^3 or even 10^2.
 
-(*)Statistical Advantage Parameter `xi`(*): `xi` lies between 1.0 and `sqrt(kappa)`. When large batch sizes (nearly matching batch gradient descent) are used, it is advisable to use `xi` that is closer to `sqrt(kappa)`. In general, as the batch size increases by a factor of `k`, increase `xi` by `sqrt(k)`. 
+*Statistical Advantage Parameter `xi`*: `xi` lies between 1.0 and `sqrt(kappa)`. When large batch sizes (nearly matching batch gradient descent) are used, it is advisable to use `xi` that is closer to `sqrt(kappa)`. In general, as the batch size increases by a factor of `k`, increase `xi` by `sqrt(k)`. 
 
 Effective ways to debug:
 
