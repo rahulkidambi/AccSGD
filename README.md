@@ -1,5 +1,5 @@
 # AccSGD
-This is the code associated with Accelerated SGD algorithm used in the paper [``On the insufficiency of existing momentum schemes for Stochastic Optimization''](https://openreview.net/forum?id=rJTutzbA-), appearing at ICLR 2018. 
+This is the code associated with Accelerated SGD algorithm used in the paper [On the insufficiency of existing momentum schemes for Stochastic Optimization](https://openreview.net/forum?id=rJTutzbA-), that appears at ICLR 2018.
 ## Usage:
 The code can be downloaded and placed in a given local directory. In a manner similar to using any usual optimizer from the pytorch toolkit, it is also possible to use the AccSGD optimizer with little effort.
 First, we require importing the optimizer through the following command:
@@ -12,7 +12,7 @@ optimizer = AccSGD(model.parameters(), lr=0.1, kappa = 1000.0, xi = 10.0)
 ```
 where, `lr` is the learning rate, `kappa` the long step parameter and `xi` is the statistical advantage parameter.
 ## Rough guidelines: 
-The learning rate is typically set similar to how it is set for a scheme like Stochastic Gradient Descent.
+The learning rate is set similar to schemes such as Stochastic Gradient Descent/Standard Momentum (Heavy Ball)/Nesterov's Acceleration.
 
 As the networks grow deeper (e.g. with resnets) and when dealing with typically harder datasets such as CIFAR/ImageNet, employing `kappa` to be 10^4 or more helps. For shallow nets and easier datasets such as MNIST, a typical value of `kappa` can be set as 10^3 or even 10^2.
 
