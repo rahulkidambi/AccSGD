@@ -25,11 +25,11 @@ For Nets with ReLU/ELU type activations:
 (--1--) Slower convergence: There are three reasons for this to happen:
 * This could be a result of setting the learning rate too low (similar to SGD/vanilla momentum/Nesterov's acceleration). 
 * This could be as a result of setting `kappa` to be too high. 
-* The other reason could be that `xi` can be set to a large value.
+* The other reason could be that `xi` can be set to a small value.
 
 (--2--) Oscillatory behavior/Divergence: There are two reasons for this to happen:
 * This could be a result of setting the learning rate to be too high (similar to SGD/vanilla momentum/Nesterov's acceleration).
-* The other reason is that `xi` can be set to a small value.
+* The other reason is that `xi` can be set to a large value.
 
 For nets with Sigmoid activations:
 
