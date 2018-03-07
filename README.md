@@ -1,5 +1,5 @@
 # AccSGD
-This is the code associated with Accelerated SGD algorithm used in the paper [On the insufficiency of existing momentum schemes for Stochastic Optimization](https://openreview.net/forum?id=rJTutzbA-), that appears at ICLR 2018.
+This is the code associated with Accelerated SGD algorithm used in the paper [On the insufficiency of existing momentum schemes for Stochastic Optimization](https://openreview.net/forum?id=rJTutzbA-), that is selected to appear at ICLR 2018.
 ## Usage:
 The code can be downloaded and placed in a given local directory. In a manner similar to using any usual optimizer from the pytorch toolkit, it is also possible to use the AccSGD optimizer with little effort.
 First, we require importing the optimizer through the following command:
