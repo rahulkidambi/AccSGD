@@ -16,7 +16,7 @@ Next, an ASGD optimizer working with a given pytorch model can be invoked using 
 optimizer = AccSGD(model.parameters(), lr=0.1, kappa = 1000.0, xi = 10.0)
 ```
 
-where, lr is the learning rate, kappa the long step parameter and xi is the statistical advantage parameter.
+where, `lr` is the learning rate, `kappa` the long step parameter and `xi` is the statistical advantage parameter.
 
 ## Rough guidelines: 
 
