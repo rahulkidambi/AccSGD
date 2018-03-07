@@ -51,7 +51,7 @@ If AccSGD is used in your paper/experiments, please cite the following papers.
   title={Accelerating Stochastic Gradient Descent},
   author={Jain, Prateek and Kakade, Sham and Kidambi, Rahul and Netrapalli, Praneeth and Sidford, Aaron},
   journal={CoRR},
-  year={2017},
-  volume = {abs/1704.08227}
+  volume = {abs/1704.08227},
+  year={2017}
 }
 ```
