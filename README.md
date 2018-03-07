@@ -12,7 +12,7 @@ optimizer = AccSGD(model.parameters(), lr=0.1, kappa = 1000.0, xi = 10.0)
 ```
 where, `lr` is the learning rate, `kappa` the long step parameter and `xi` is the statistical advantage parameter.
 ## Guidelines on setting parameters/debugging: 
-*The learning rate* `lr`: `lr` set similar to schemes such as vanilla Stochastic Gradient Descent (SGD)/Standard Momentum (Heavy Ball)/Nesterov's Acceleration. Note that `lr` is a function of batch size - a rigorous quantification of this phenomenon can be found in the following [paper](https://arxiv.org/abs/1610.03774). Such a characterization has been observed in several empirical works.
+*The learning rate* `lr`: `lr` is set in a manner similar to schemes such as vanilla Stochastic Gradient Descent (SGD)/Standard Momentum (Heavy Ball)/Nesterov's Acceleration. Note that `lr` is a function of batch size - a rigorous quantification of this phenomenon can be found in the following [paper](https://arxiv.org/abs/1610.03774). Such a characterization has been observed in several empirical works.
 
 *Long Step* `kappa`: As the networks grow deeper (e.g. with resnets) and when dealing with typically harder datasets such as CIFAR/ImageNet, employing `kappa` to be 10^4 or more helps. For shallow nets and easier datasets such as MNIST, a typical value of `kappa` can be set as 10^3 or even 10^2. 
 
