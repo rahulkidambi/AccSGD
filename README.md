@@ -22,9 +22,9 @@ where, lr is the learning rate, kappa the long step parameter and xi is the stat
 
 The learning rate is typically set similar to how it is set for a scheme like Stochastic Gradient Descent.
 
-As the networks grow deeper (specifically with Resnets and beyond), employing kappa to be 10^4 or more helps. For shallow nets, a typical value of kappa can be set as 10^3.
+As the networks grow deeper (specifically with Resnets and beyond), employing `kappa` to be 10^4 or more helps. For shallow nets, a typical value of `kappa` can be set as 10^3.
 
-As the batch size increases by a factor of "k", increase xi by sqrt(k).
+As the batch size increases by a factor of `k`, increase `xi` by `sqrt(k)`.
 
 ## Citation:
 
