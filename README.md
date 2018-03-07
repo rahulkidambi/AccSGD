@@ -23,13 +23,13 @@ Effective ways to debug:
 For Nets with ReLU/ELU type activations:
 
 (--1--) Slower convergence: There are three reasons for this to happen:
-(a) This could be a result of setting the learning rate too low (which parallels SGD/vanilla momentum/Nesterov's acceleration). 
-(b) This could be as a result of setting `kappa` to be too high. 
-(c) The other reason could be that `xi` can be set to a very small value.
+- This could be a result of setting the learning rate too low (which parallels SGD/vanilla momentum/Nesterov's acceleration). 
+- This could be as a result of setting `kappa` to be too high. 
+- The other reason could be that `xi` can be set to a very small value.
 
 (--2--) Oscillatory behavior/Divergence: There are two reasons for this to happen:
-(a) This could be a result of setting the learning rate to be too high (similar to SGD/vanilla momentum/Nesterov's acceleration).
-(b) The other reason is that `xi` can be set to a very large value and may require tuning down.
+- This could be a result of setting the learning rate to be too high (similar to SGD/vanilla momentum/Nesterov's acceleration).
+- The other reason is that `xi` can be set to a very large value and may require tuning down.
 
 For nets with Sigmoid activations:
 
