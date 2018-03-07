@@ -33,7 +33,7 @@ For Nets with ReLU/ELU type activations:
 
 For nets with Sigmoid activations:
 
-Slower convergence after an initial rapid change in error: This is a sign of an over aggressive setting of parameters and must be treated in a similar manner as the oscillatory/divergence behavior (--2--) encountered in the ReLU/ELU activation case.
+Slower convergence after an initial rapid decrease in error: This is a sign of an over aggressive setting of parameters and must be treated in a similar manner as the oscillatory/divergence behavior (--2--) encountered in the ReLU/ELU activation case.
 
 Slow convergence right from the start: This is more likely related to slower convergence (--1--) encountered in the ReLU/ELU case.
 
