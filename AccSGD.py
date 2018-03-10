@@ -2,7 +2,10 @@ from torch.optim.optimizer import Optimizer, required
 import copy
 
 class AccSGD(Optimizer):
-    r"""Implements the algorithm proposed in https://arxiv.org/pdf/1704.08227.pdf, which is a provably accelerated method for stochastic optimization. This has been employed in https://openreview.net/forum?id=rJTutzbA- for training several deep learning models of practical interest.
+    r"""Implements the algorithm proposed in https://arxiv.org/pdf/1704.08227.pdf, which is a provably accelerated method 
+    for stochastic optimization. This has been employed in https://openreview.net/forum?id=rJTutzbA- for training several 
+    deep learning models of practical interest. This code has been implemented by building on the construction of the SGD 
+    optimization module found in pytorch codebase.
     Args:
         params (iterable): iterable of parameters to optimize or dicts defining
             parameter groups
